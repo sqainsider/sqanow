@@ -1,0 +1,35 @@
+{
+    "Opportunites": {
+        "oppty_new": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        },
+        "OpptyDetails": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        }   
+    },
+    "Accounts": {
+        "accountNew": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        },
+        "accountDetails": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        }   
+    }
+
+}

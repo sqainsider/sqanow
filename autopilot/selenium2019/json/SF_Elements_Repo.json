@@ -1,0 +1,200 @@
+{
+    "Login": {
+        "username": {
+            "driver": "",
+            "element": "",
+            "locator_id": "//input[@id='username']",
+            "locator_type": "xpath",
+            "method": "send_keys",
+            "value": "mycpq_dev@sqanow.com",
+            "object": "login",
+            "field_name": "",
+            "field_label": "",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "default_seq":"1",
+            "processing": "defer",
+            "sleep": 1,
+            "dependency": "" 
+        },
+        "password": {
+            "driver": "",
+            "element": "",
+            "locator_id": "//input[@id='password']",
+            "locator_type": "xpath",
+            "method": "send_keys",
+            "value": "tiger2019",
+            "object": "",
+            "field_name": "",
+            "field_label": "",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "processing": "defer",
+            "sleep": 1
+     
+        },
+        "login": {
+            "driver": "",
+            "locator_id": "//input[@id='Login']",
+            "locator_type": "xpath",
+            "method": "click",
+            "value": null,
+            "object": "",
+            "field_name": "",
+            "field_label": "",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored_value": "N",
+            "special_rule": "",
+            "processing": "defer",
+            "sleep": 1
+     
+        }   
+    },
+    
+    "Opportunites": {
+        "oppty_new": {
+            "driver": "",
+            "element": "",
+            "locator_id": "new",
+            "locator_type": "name",
+            "method": "click",
+            "value": null,
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "New",
+            "required":"y",
+            "visible": "y",
+            "readonly": "n",
+            "stored": "n",
+            "special": "",
+            "default_seq":"1",
+            "processing": "now",
+            "sleep": 3
+    
+
+        },
+        "oppty_name": {
+            "driver": "",
+            "element": "",
+            "locator_id": "opp3",
+            "locator_type": "id",
+            "method": "send_keys",
+            "value": "QA Daily Check",
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "",
+            "required":"y",
+            "visible": "y",
+            "readonly": "n",
+            "stored": "n",
+            "special": "",
+            "default_seq": "1",
+            "processing": "defer",
+            "sleep": 3
+    
+
+        },
+          "account_name": {
+            "driver": "",
+            "element": "",
+            "locator_id": "opp4",
+            "locator_type": "id",
+            "method": "send_keys",
+            "value": "LTE",
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "Account Name",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "default_seq":"1",
+            "processing": "defer",
+            "sleep": 2
+        },
+        "stage": {
+            "driver": "",
+            "element": "",
+            "locator_id": "opp11",
+            "locator_type": "id",
+            "method": "select",
+            "value": "Qualification",
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "Stage",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "default_seq":"1",
+            "processing": "defer",
+            "sleep": 5
+        },
+        "close_date": {
+            "driver": "",
+            "element": "",
+            "locator_id": "opp9",
+            "locator_type": "id",
+            "method": "send_keys",
+            "value": "10/31/2019",
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "Close Date",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "default_seq":"1",
+            "processing": "defer",
+            "sleep": 3
+         
+        },
+            "save": {
+            "driver": "",
+            "element": "",
+            "locator_id": "save",
+            "locator_type": "name",
+            "method": "click",
+            "value": null,
+            "object": "opportunities",
+            "field_name": "",
+            "field_label": "Save",
+            "required": "",
+            "visible": "",
+            "readonly": "",
+            "stored": "N",
+            "special": "",
+            "default_seq":"1",
+            "processing": "defer",
+            "sleep": 5
+        }
+    },
+    "Accounts": {
+        "accountNew": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        },
+        "accountDetails": {
+            "driver": "",
+            "locator_id": "Cloud;On-Perm (Enterprise)",
+            "locator_type": "",
+            "method": "",
+            "value": ""
+        }   
+    }
+
+}

@@ -1,0 +1,350 @@
+{
+    "smartCPQ": {
+        "TestCase": [
+            {
+                "TestCaseId": "12234",
+                "Opportunity": {
+                    "OpptyRecordType": "Direct",
+                    "OpptyDetails": {
+                        "AccountName": "Workday, Inc.",
+                        "ProductTypes": "Cloud;On-Perm (Enterprise)"
+                    },
+                    "OpptyEdit": {
+                        "OpptyName": "FIN-TC-xxxxx",
+                        "OpptySummary": "This is automated Oppty creation",
+                        "AccountName": "Workday, Inc.",
+                        "MarketGroup": "IT Operations",
+                        "SalesType": "Expansion",
+                        "Product Type(s)": "",
+                        "Amount": "100",
+                        "CloseDate": "%Default",
+                        "Stage": "Business Qualification",
+                        "ForecastCategory": "%Default"
+                    },
+                    "OpptyQuoteInformation": {
+                        "PaymentType": "Purchase Order",
+                        "Contract Type": "Existing",
+                        "PONumber": "123456",
+                        "PaymentAmount": "12345677"
+                    },
+                    "OpptySpecialTermFuturePayment": {
+                        "FuturePayment": "True",
+                        "Payment#": "",
+                        "OpptyPayments": [
+                            {
+                                "PaymentAmount": "",
+                                "PaymentInvoiceDate": ""
+                            },
+                            {
+                                "PaymentAmount": "",
+                                "PaymentInvoiceDate": ""
+                            }
+                        ]
+                    },
+                    "OpptyContactRoles": [
+                        {
+                            "Contact#": "1",
+                            "Contact": "Brandon Newton",
+                            "Role": " Bill To"
+                        },
+                        {
+                            "Contact#": "2",
+                            "Contact": "Brandon Newton",
+                            "Role": " Ship To"
+                        }
+                    ],
+                    "OpptyProcessSalesOrder": {
+                        "Approval": []
+                    },
+                    "OpptyUseCases": {
+                        "UseCase": []
+                    },
+                    "OpptyFulfillmets": {
+                        "Fullfillments": []
+                    }
+                },
+                "Quote": {
+                    "QuoteConfigureProduct": {
+                        "FamilyProductSeletion": "Splunk Enterprise",
+                        "LicenseType": "Perp License",
+                        "QuoteConfigureProducts": {
+                            "ProductCode": "SE-P-LIC-BND",
+                            "SupportLevel": "Standard",
+                            "AssetGroup": "PS1",
+                            "Region": "#N/A",
+                            "QuoteProductSelection": {
+                                "QuoteCore": [
+                                    {
+                                        "ProductCode": ""
+                                    }
+                                ],
+                                "QuotePremiumApps": [
+                                    {
+                                        "ProductCode": "ECP-LIC-BND"
+                                    },
+                                    {
+                                        "ProductCode": "ECP-P-LIC"
+                                    }
+                                ],
+                                "QuoteBuyingVehicle": {
+                                    "QuoteBVCoreApplication": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "QuoteBVPremiumApps": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                },
+                                "QuoteBVUnlimited": {
+                                    "QuoteCoreAppUA": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "QuotePremiumAppUA": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                },
+                                "QuoteOthers": {
+                                    "QuoteProfessionalServices": [
+                                        {
+                                            "ProductCode": "PS-DAY-C"
+                                        },
+                                        {
+                                            "ProductCode": "PS-CMIG-PRM"
+                                        }
+                                    ],
+                                    "QuoteEduction": [
+                                        {
+                                            "ProductCode": "EDI-UNIT-1"
+                                        },
+                                        {
+                                            "ProductCode": "EDU-UNIT-100"
+                                        }
+                                    ],
+                                    "QuoteAdd-Ons:": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "Quote.conf": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "QuoteEdit": {
+                            "QuoteSegmentedProducts": {
+                                "Year1": [
+                                    {
+                                        "ProductCode": "SE-P-PR",
+                                        "StarOnDelivery": "True",
+                                        "AdditionalDisc": "10"
+                                    }
+                                ]
+                            },
+                            "QuoteCustomProducts": {
+                                "Year1": [
+                                    {
+                                        "ProductCode": "",
+                                        "StarOnDelivery": "",
+                                        "AdditionalDisc": ""
+                                    }
+                                ]
+                            },
+                            "QuoteStandardProduct": [
+                                {
+                                    "ProductName": "ES-P-LIC",
+                                    "AdditonalDisc": "10"
+                                },
+                                {
+                                    "ProductName": "SE-P-LIC",
+                                    "AdditonalDisc": "10"
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "TestCaseId": "999999",
+                "Opportunity": {
+                    "OpptyRecordType": "Direct",
+                    "OpptyDetails": {
+                        "AccountName": "Workday, Inc.",
+                        "ProductTpes": "Cloud;On-Perm (Enterprise)"
+                    },
+                    "OpptyEdit": {
+                        "OpptyName": "FIN-TC-xxxxx",
+                        "OpptySummary": "This is automated Oppty creation",
+                        "AccountName": "Workday, Inc.",
+                        "MarketGroup": "IT Operations",
+                        "SalesType": "Expansion",
+                        "Product Type(s)": "",
+                        "Amount": "100",
+                        "CloseDate": "%Default",
+                        "Stage": "Business Qualification",
+                        "ForecastCategory": "%Default"
+                    },
+                    "OpptyQuoteInformation": {
+                        "PaymentType": "Purchase Order",
+                        "Contract Type": "Existing",
+                        "PONumber": "123456",
+                        "PaymentAmount": "12345677"
+                    },
+                    "OpptySpecialTermFuturePayment": {
+                        "FuturePayment": "True",
+                        "Payment#": "",
+                        "OpptyPayments": [
+                            {
+                                "PaymentAmount": "",
+                                "PaymentInvoiceDate": ""
+                            },
+                            {
+                                "PaymentAmount": "",
+                                "PaymentInvoiceDate": ""
+                            }
+                        ]
+                    },
+                    "OpptyContactRoles": [
+                        {
+                            "Contact#": "1",
+                            "Contact": "Brandon Newton",
+                            "Role": " Bill To"
+                        },
+                        {
+                            "Contact#": "2",
+                            "Contact": "Brandon Newton",
+                            "Role": " Ship To"
+                        }
+                    ],
+                    "OpptyProcessSalesOrder": {
+                        "Approval": []
+                    },
+                    "OpptyUseCases": {
+                        "UseCase": []
+                    },
+                    "OpptyFulfillmets": {
+                        "Fullfillments": []
+                    }
+                },
+                "Quote": {
+                    "QuoteConfigureProduct": {
+                        "FamilyProductSeletion": "Splunk Enterprise",
+                        "LicenseType": "Perp License",
+                        "QuoteConfigureProducts": {
+                            "ProductCode": "SE-P-LIC-BND",
+                            "SupportLevel": "Standard",
+                            "AssetGroup": "PS1",
+                            "Region": "#N/A",
+                            "QuoteProductSelection": {
+                                "QuoteCore": [
+                                    {
+                                        "ProductCode": ""
+                                    }
+                                ],
+                                "QuotePremiumApps": [
+                                    {
+                                        "ProductCode": "ECP-LIC-BND"
+                                    },
+                                    {
+                                        "ProductCode": "ECP-P-LIC"
+                                    }
+                                ],
+                                "QuoteBuyingVehicle": {
+                                    "QuoteBVCoreApplication": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "QuoteBVPremiumApps": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                },
+                                "QuoteBVUnlimited": {
+                                    "QuoteCoreAppUA": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "QuotePremiumAppUA": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                },
+                                "QuoteOthers": {
+                                    "QuoteProfessionalServices": [
+                                        {
+                                            "ProductCode": "PS-DAY-C"
+                                        },
+                                        {
+                                            "ProductCode": "PS-CMIG-PRM"
+                                        }
+                                    ],
+                                    "QuoteEduction": [
+                                        {
+                                            "ProductCode": "EDI-UNIT-1"
+                                        },
+                                        {
+                                            "ProductCode": "EDU-UNIT-100"
+                                        }
+                                    ],
+                                    "QuoteAdd-Ons:": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ],
+                                    "Quote.conf": [
+                                        {
+                                            "ProductCode": ""
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "QuoteEdit": {
+                            "QuoteSegmentedProducts": {
+                                "Year1": [
+                                    {
+                                        "ProductCode": "SE-P-PR",
+                                        "StarOnDelivery": "True",
+                                        "AdditionalDisc": "10"
+                                    }
+                                ]
+                            },
+                            "QuoteCustomProducts": {
+                                "Year1": [
+                                    {
+                                        "ProductCode": "",
+                                        "StarOnDelivery": "",
+                                        "AdditionalDisc": ""
+                                    }
+                                ]
+                            },
+                            "QuoteStandardProduct": [
+                                {
+                                    "ProductName": "ES-P-LIC",
+                                    "AdditonalDisc": "10"
+                                },
+                                {
+                                    "ProductName": "SE-P-LIC",
+                                    "AdditonalDisc": "10"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}
