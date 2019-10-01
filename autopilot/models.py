@@ -31,7 +31,7 @@ class Elements(models.Model):
         Choices, related_name='element_type', blank=True, null=True, on_delete=models.CASCADE)
     event = models.ForeignKey(
         Choices, related_name='event', blank=True, null=True, on_delete=models.CASCADE)
-
+    default_seq = models.IntegerField()
     component = models.ForeignKey(Component, on_delete=models.CASCADE)
     page_feature = models.ForeignKey(
         Feature, related_name='pageFeature', on_delete=models.CASCADE)
