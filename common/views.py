@@ -9,7 +9,7 @@ from .models import Choices
 
 def home(request):
     # return HttpResponse("Home Page..........")
-    return render(request, 'home.html')
+    return render(request, 'SQANow_home.html')
 
 
 def about(request):
