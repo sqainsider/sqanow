@@ -1,3 +1,29 @@
+from .models import *
+import csv
 from django.contrib import admin
+from django.http import HttpResponse
+from common.toolkits.utils import ExportCVSMixin_Admin
+from common.models import Choices
 
-# Register your models here.
+
+# class CountryAdmin(admin.ModelAdmin):
+#     list_display = ('id', 'name', 'country')
+#     # list_filter = ['system', ]
+
+
+@admin.register(Choices)
+class ChoiceListAdmin(admin.ModelAdmin,  ExportCVSMixin_Admin):
+    list_display = ('id', 'is_active', 'model', 'name',  'value', 'description',
+                    'created_by', 'lastModified_by',
+                    'date_created', 'date_updated',)
+    list_filter = ['system', 'name', ]
+
+    search_fields = ('name', 'model',)
+    ordering = ('name',)
+    exclude = []
+    readonly_fields = []
+    list_per_page = 15
+    actions = ['export_as_csv']
+
+
+# admin.site.register(Country, CountryAdmin)
