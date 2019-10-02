@@ -13,10 +13,11 @@ from common.models import Choices
 
 @admin.register(Choices)
 class ChoiceListAdmin(admin.ModelAdmin,  ExportCVSMixin_Admin):
-    list_display = ('id', 'is_active', 'model', 'name',  'value', 'description',
-                    'created_by', 'lastModified_by',
+    list_display = ('id', 'name', 'isActive', 'model',  'value', 'description',
+                    # 'created_by', 'lastModified_by',
                     'date_created', 'date_updated',)
-    list_filter = ['system', 'name', ]
+    # list_filter = ['system', 'name', ]
+    # list_filter = ['system', 'name', ]
 
     search_fields = ('name', 'model',)
     ordering = ('name',)
@@ -26,4 +27,4 @@ class ChoiceListAdmin(admin.ModelAdmin,  ExportCVSMixin_Admin):
     actions = ['export_as_csv']
 
 
-# admin.site.register(Country, CountryAdmin)
+# # admin.site.register(Country, CountryAdmin)
