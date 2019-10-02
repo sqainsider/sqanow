@@ -23,7 +23,7 @@ class ChoiceListAdmin(admin.ModelAdmin,  ExportCVSMixin_Admin):
     ordering = ('name',)
     exclude = []
     readonly_fields = []
-    list_per_page = 15
+    list_per_page = 10
     actions = ['export_as_csv']
 
 
