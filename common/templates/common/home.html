@@ -1,0 +1,43 @@
+<!-- table:table>thead>th>tr -->
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block branding %}
+    <h1 id='site-name'> 
+        <a href="{% url 'home' %}">
+            <img src = "{% static 'Portland Head Lighthouse.jpg' %}" height="100px"/>
+        </a>
+    </h2>
+{% endblock %}
+    
+{% block content %}
+    
+    <h1>Under Construction</h1>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Test Plan....</th>
+                <th>Test Scenarios</th>
+                <th>Test Condition</th>
+                <th>Expected Results</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for movie  in movies %}
+            <tr>
+                <td>
+                    <a href="{{ movie.id }}">{{ movie.title }}
+                </td>
+                <td>{{ movie.genre }}</td>
+                <td>{{ movie.release_year }}</td>
+                <td>{{ movie.daily_rate }}</td>
+            
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table:table>
+
+{% endblock  %}
