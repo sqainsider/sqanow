@@ -59,7 +59,8 @@ ROOT_URLCONF = 'SQANow.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [],  
+        'DIRS': [os.path.join(BASE_DIR, 'common//templates//common')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -1,4 +1,3 @@
-<!-- table:table>thead>th>tr -->
 {% extends 'base.html' %}
 
 {% load staticfiles %}
@@ -25,19 +24,6 @@
             </tr>
         </thead>
 
-        <tbody>
-            {% for movie  in movies %}
-            <tr>
-                <td>
-                    <a href="{{ movie.id }}">{{ movie.title }}
-                </td>
-                <td>{{ movie.genre }}</td>
-                <td>{{ movie.release_year }}</td>
-                <td>{{ movie.daily_rate }}</td>
-            
-            </tr>
-            {% endfor %}
-        </tbody>
     </table:table>
 
 {% endblock  %}
