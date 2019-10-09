@@ -1,5 +1,9 @@
 import unittest
 import time
+import os
+
+
+#Selenium
 # from selenium import alert
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
@@ -10,16 +14,29 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common import by
 from selenium.webdriver.common.alert import Alert
+
+
+#Custom Toolkits
 #from toolkit.lib import today
 
 # class AutoPythonOrgSearchLogin(unittest.TestCase):
+
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(f"Base Dir=:{base_dir}")
+
+drivers_dir =  f"{base_dir}\drivers"
+
+print(drivers_dir)
 
 
 class Login(unittest.TestCase):
 
 
     def setUp(self):
-        self.driver = webdriver.Chrome("T:\AutoPilot2019\selenium\drivers\chromedriver.exe")
+        # self.driver = webdriver.Chrome("T:\AutoPilot2019\selenium\drivers\chromedriver.exe")
+        self.driver = webdriver.Chrome(f"{drivers_dir}\chromedriver.exe")
  
 
     def test_run(self):
@@ -56,8 +73,14 @@ class Login(unittest.TestCase):
 
 
         #Opportunity
-        #elem = driver.find_element_by_xpath("//*[@title='Opportunities Tab']")
-        
+#        elem = driver.find_element_by_xpath("//a[@title='Opportunities']")
+        # elem = driver.find_element_by_xpath("//span[@class='slds-truncate'][contains(text(),'Opportunities')]")
+ 
+        # elem.click()
+
+
+
+
         # driver.find_element_by_link_text('Opportunities').click
         
         # elem = driver.find_element_by_link_text('Opportunities').click
@@ -72,35 +95,45 @@ class Login(unittest.TestCase):
 
 
         # Opportunity --> Edit
-        xpath = "/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[1]/a/div"
+        # xpath = "/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[1]/a/div"
+        xpath = "//div[@title='Edit']"
         elem = driver.find_element_by_xpath(xpath)
         elem.click()
 
+        #Close Date
+        # xpath = "//input[@id='5408:0']"
+        xpath = "/html[1]/body[1]/div[5]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/article[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]"
 
-        # Opportuity --> New Quote
-        xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[2]/a/div"
+        value = "10/30/2019"
         elem = driver.find_element_by_xpath(xpath)
-        elem.click()
+        elem.send_keys(value)
 
-        # Opportuity --> Include Document
-        xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[3]/a/div"
-        elem = driver.find_element_by_xpath(xpath)
-        elem.click()
 
-        # Opportuity --> Create Order
-        xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[4]/a/div"
-        elem = driver.find_element_by_xpath(xpath)
-        elem.click()
 
-        # Dropdown more
-        xpath = '/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[5]/div/div[1]/div/div/a'
-        elem = driver.find_element_by_xpath(xpath)
-        elem.click()
+        # # Opportuity --> New Quote
+        # xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[2]/a/div"
+        # elem = driver.find_element_by_xpath(xpath)
+        # elem.click()
 
-        # New Case
-        xpath = "/html/body/div[8]/div/ul/li[1]/a"
-        elem = driver.find_element_by_xpath(xpath)
-        elem.click()
+        # # Opportuity --> Include Document
+        # xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[3]/a/div"
+        # elem = driver.find_element_by_xpath(xpath)
+        # elem.click()
+
+        # # Opportuity --> Create Order
+        # xpath = "html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[4]/a/div"
+        # elem = driver.find_element_by_xpath(xpath)
+        # elem.click()
+
+        # # Dropdown more
+        # xpath = '/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[5]/div/div[1]/div/div/a'
+        # elem = driver.find_element_by_xpath(xpath)
+        # elem.click()
+
+        # # New Case
+        # xpath = "/html/body/div[8]/div/ul/li[1]/a"
+        # elem = driver.find_element_by_xpath(xpath)
+        # elem.click()
 
 
 
@@ -127,18 +160,18 @@ class Login(unittest.TestCase):
         # xpath = '//input[@id="3592:0"]'
         # elem2 = driver.find_element_by_xpath(xpath)
         
-        # Opportunity --> Edit
-        elem = driver.find_element_by_xpath('/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[1]/a/div')
-        elem.click()
+        # # Opportunity --> Edit
+        # elem = driver.find_element_by_xpath('/html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[1]/div/header/div[2]/div/div[2]/ul/li[1]/a/div')
+        # elem.click()
 
-        #cancel
-        xpath = '/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[1]/span'
-        elem = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[1]/span')
-        elem.click()
+        # #cancel
+        # xpath = '/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[1]/span'
+        # elem = driver.find_element_by_xpath('/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[1]/span')
+        # elem.click()
 
-        #Save
-        xpath = '/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[3]/span'
-        elem = driver.find_element_by_xpath(xpath)
+        # #Save
+        # xpath = '/html/body/div[5]/div[2]/div[8]/div[2]/div/div[3]/div/button[3]/span'
+        # elem = driver.find_element_by_xpath(xpath)
       
         # /html/body/div[5]/div[1]/section/div/div/div[1]/div[2]/div[1]/div/div[3]/div[2]/div/div/div/div[1]/article/div[2]/header/div[2]/h2/a/span[1]
 

@@ -69,7 +69,6 @@ class Login(unittest.TestCase):
         driver.save_screenshot(r'C:\temp\sfdc\login.png')
 
 
-
     def tearDown(self):
         print("Run Successfully")
         self.driver.close()

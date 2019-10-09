@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # from selenium import alert
 from selenium import webdriver
@@ -20,22 +20,32 @@ from selenium.webdriver.common.alert import Alert
 
 # Custom
 sys.path.append('.')
-sys.path.append('../toolkits')
+sys.path.append("../toolkits")
+
+print(sys.path)
+
 from toolkits.lib import today, timestamp_str
 from toolkits.sel_lib import get_object_id, get_sf_base_url 
 from toolkits.sel_lib import build_page_object_elements, run
 
 
-# class Login(unittest.TestCase):
-    
-data = Path("C:\myGoogleDrive\Automation\Tomato\AutoPilot2019\selenium2019\json\SF_Elements_Repo.json").read_text()
-json_data = json.loads(data)
+driver_dir = f"{base_dir}\drivers"
 
+# class Login(unittest.TestCase):
+json_dir = driver_dir = f"{base_dir}\json"
+
+
+# json_src_data = Path("C:\myGoogleDrive\Automation\Tomato\AutoPilot2019\selenium2019\json\SF_Elements_Repo.json").read_text()
+json_src_data = Path(f"{json_dir}\json\SF_Elements_Repo.json").read_text()
+
+json_data = json.loads(json_src_data)
 sfdc_login = json_data["Login"]
 sfdc_opportunity = json_data["Opportunites"]
 
   
-sfdc_driver = webdriver.Chrome("C:\myGoogleDrive\Automation\Tomato\AutoPilot2019\selenium2019\drivers\chromedriver.exe")
+# sfdc_driver = webdriver.Chrome("C:\myGoogleDrive\Automation\Tomato\AutoPilot2019\selenium2019\drivers\chromedriver.exe")
+sfdc_driver = webdriver.Chrome(f"{driver_dir}\chromedriver.exe")
+
 # sfdc = self.driver
 sfdc_driver.implicitly_wait(10)
 url = 'https://login.salesforce.com/'
