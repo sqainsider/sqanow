@@ -3,7 +3,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./autopilot",
+        ".",
         "-p",
         "*test*.py"
     ],
