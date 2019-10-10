@@ -23,7 +23,7 @@ class Choices(models.Model):
     value = models.CharField(max_length=30)
     description = models.CharField(max_length=50)
     isActive = models.BooleanField(default=True)
-    # system = models.CharField(max_length=50, )
+    system = models.CharField(max_length=50, )
     model = models.CharField(max_length=50, blank=True, null=True)
     date_created = models.DateTimeField(
         auto_now=False, auto_now_add=True)
