@@ -11,7 +11,7 @@ from datetime import datetime
 # from users.models import CustomUser
 
 
-# comments .....
+# comments ..........
 
 class Choices(models.Model):
 
